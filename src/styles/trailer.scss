@@ -1,0 +1,66 @@
+@import "variaveis";
+
+.trailer {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &__box {
+    background-color: rgba($color: $zinc700, $alpha: 0.35);
+    border: 2px solid $neutral600;
+    border-radius: 45px;
+    width: 800px;
+    height: 540px;
+    position: absolute;
+    top: 220px;
+    left: 359.5px;
+  }
+
+  &__menu {
+    background-color: rgba($color: $zinc700, $alpha: 0.35);
+    border: 2px solid $neutral600;
+    border-radius: 50px;
+    height: 70px;
+    padding: 0px 30px;
+    position: absolute;
+    top: 830px;
+    left: 375px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      &__item {
+        color: $neutral100;
+        font-size: 32px;
+        font-family: "Poppins";
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &--active {
+          background-color: $emerald800;
+          border-radius: 25px;
+          font-size: 32px;
+          line-height: 48px;
+          font-family: "Poppins";
+          font-weight: 700;
+          color: $neutral100;
+          padding: 10px 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: 45px;
+}

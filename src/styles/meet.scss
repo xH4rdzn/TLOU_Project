@@ -1,0 +1,73 @@
+@import "variaveis";
+
+.meet {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__container {
+    img {
+      width: 100%;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 243px;
+    margin: 0 183px;
+
+    &__item {
+      width: 350px;
+      height: 550px;
+      border-radius: 25px;
+
+      img {
+        width: 349px;
+        height: 549px;
+        border-radius: 25px;
+        border: 1px solid $white;
+      }
+    }
+  }
+
+  &__menu {
+    background-color: rgba($color: $zinc700, $alpha: 0.35);
+    width: 564px;
+    height: 50px;
+    border-radius: 50px;
+    // padding: 10px 0;
+    position: absolute;
+    top: 158px;
+    left: 480px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      &__item {
+        color: $neutral100;
+        font-size: 20px;
+        font-family: "Poppins";
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &--active {
+          background-color: $emerald800;
+          border-radius: 25px;
+          font-size: 20px;
+          font-family: "Poppins";
+          font-weight: 700;
+          color: $neutral100;
+          padding: 10px 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 @import "header";
 @import "hero";
 @import "about";
+@import "meet";
+@import "trailer";
 
 * {
   padding: 0;
@@ -38,4 +40,12 @@ a {
   position: absolute;
   left: 150px;
   cursor: pointer;
+}
+
+.card--name {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: $neutral100;
+  text-align: center;
+  margin-top: 16px;
 }
