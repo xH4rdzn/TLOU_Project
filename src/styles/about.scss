@@ -1,0 +1,31 @@
+@import "variaveis";
+
+.about {
+  &__container {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    padding: 10px 44px;
+    width: 430px;
+    height: 466px;
+    background-color: rgba($color: $zinc700, $alpha: 0.4);
+    border-radius: 55px;
+    position: absolute;
+    top: 190px;
+    left: 150px;
+
+    p {
+      font-family: "Poppins";
+      font-weight: 400;
+      color: $neutral100;
+      font-size: 15px;
+      line-height: 22.5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

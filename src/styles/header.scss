@@ -1,0 +1,35 @@
+@import "variaveis";
+
+.header {
+  display: flex;
+  margin: 10px 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-width: 190px;
+    width: 100%;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__item {
+      color: $neutral100;
+      font-family: "Montserrat";
+      font-size: 17px;
+
+      &--btn {
+        font-family: "Montserrat";
+        color: $neutral100;
+        background-color: $emerald800;
+        padding: 12px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
