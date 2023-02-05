@@ -17,10 +17,10 @@
     <img src="./dist/images/tlou_logo.svg" alt="">
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__list__item"><a href="">ABOUT</a></li>
-        <li class="menu__list__item"><a href="">MEET THE CAST</a></li>
-        <li class="menu__list__item"><a href="">TRAILER</a></li>
-        <li class="menu__list__item--btn"><a href="">BUY THE GAME</a></li>
+        <li class="menu__list__item"><a href="#about">ABOUT</a></li>
+        <li class="menu__list__item"><a href="#meet">MEET THE CAST</a></li>
+        <li class="menu__list__item"><a href="#trailer">TRAILER</a></li>
+        <li class="menu__list__item--btn"><a href="#buy">BUY THE GAME</a></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +29,7 @@
       <img src="./dist/images/ellieflorest.png" alt="">
     </div>
   </section>
-  <section class="about">
+  <section id="about" class="about">
     <h1 class="section--title">ABOUT</h1>
     <div class="about__container">
       <img src="./dist/images/violon.png" alt="">
@@ -40,7 +40,7 @@
       </div>
     </div>
   </section>
-  <section class="meet">
+  <section id="meet" class="meet">
     <h1 class="section--title">MEET THE CAST</h1>
     <div class="meet__container">
       <img src="./dist/images/meet.png" alt="">
@@ -68,7 +68,7 @@
       </ul>
     </div>
   </section>
-  <section class="trailer">
+  <section id="trailer" class="trailer">
     <h1 class="section--title">TRAILER</h1>
     <img src="./dist/images/trailerback.png" alt="">
     <div class="trailer__box">
@@ -83,9 +83,66 @@
       </ul>
     </div>
   </section>
-  <section class="buy">
-    <h1 class="section--title">BUY THE GAME</h1>
+  <h1 class="section--title">BUY THE GAME</h1>
+  <section id="buy" class="buy">
+    <div class="buy__container">
+      <ul class="buy__list">
+        <li class="buy__list__item">
+          <img src="./dist/images/part1.png" alt="The Last Of Us Part 1">
+          <div class="buy__box">
+            <a target="_blank" href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">
+              <img src="./dist/images/STEAM.svg" alt="STEAM">
+            </a>
+            <a target="_blank" href="https://store.playstation.com/pt-br/product/UP9000-PPSA03396_00-THELASTOFUSPART1">
+              <img src="./dist/images/PSLOGO.svg" alt="PS Store">
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="./dist/images/part2.png" alt="The Last Of Us Part 2">
+          <div class="buy__box">
+            <a target="_blank" href="https://store.playstation.com/pt-br/product/UP9000-CUSA07820_00-THELASTOFUSPART2">
+              <img src="./dist/images/PSLOGO.svg" alt="PS Store">
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="./dist/images/leftbehind.png" alt="The Last of Us - Left Behind">
+          <div class="buy__box">
+            <a target="_blank" href="https://store.playstation.com/pt-br/product/UP9000-CUSA00553_00-THELASTOFUS00000">
+              <img src="./dist/images/PSLOGO.svg" alt="PS Store">
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
   </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="./dist/images/vagalumes.png" alt="">
+      <h3 class="footer--text">When you're lost in the dark, look for the light, believe in the fireflies.</h3>
+    </div>
+    <div class="social__container">
+      <ul class="social__list">
+        <li class="social__list__item">
+          <a target="_blank" href="https://www.instagram.com/igor_rodrigues223/">
+            <img id="insta" src="./dist/images/InstagramLogo.svg" alt="">
+          </a>
+        </li>
+        <li class="social__list__item">
+          <a target="_blank" href="https://github.com/xH4rdzn">
+            <img id="git" src="./dist/images/GithubLogo.svg" alt="">
+          </a>
+        </li>
+        <li class="social__list__item">
+          <a target="_blank" href="EM Construção">
+            <img id="user" src="./dist/images/User.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>

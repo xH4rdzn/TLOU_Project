@@ -4,6 +4,8 @@
 @import "about";
 @import "meet";
 @import "trailer";
+@import "buy";
+@import "footer";
 
 * {
   padding: 0;
@@ -48,4 +50,12 @@ a {
   color: $neutral100;
   text-align: center;
   margin-top: 16px;
+}
+
+.footer--text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: $zinc700;
+  text-transform: uppercase;
+  line-height: 29px;
 }
