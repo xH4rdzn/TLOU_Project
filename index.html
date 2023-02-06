@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <img src="./dist/images/tlou_logo.svg" alt="">
     <nav class="menu">
       <ul class="menu__list">
@@ -45,25 +45,75 @@
     <div class="meet__container">
       <img src="./dist/images/meet.png" alt="">
       <div class="meet__menu">
-        <ul class="meet__menu__list">
-          <li><button class="meet__menu__list__item--active">MAIN CAST</button></li>
-          <li><button class="meet__menu__list__item">part I cast</button></li>
-          <li><button class="meet__menu__list__item">part II cast</button></li>
-          <li><button class="meet__menu__list__item">Infected</button></li>
-        </ul>
+        <nav class="meet__menu__list">
+          <button data-tab-button="main" class=" meet__menu__list__item meet__menu__list__item--active">MAIN CAST</button>
+          <button data-tab-button="part_1" class="meet__menu__list__item">part I cast</button>
+          <button data-tab-button="part_2" class="meet__menu__list__item ">part II cast</button>
+          <button data-tab-button="infected" class="meet__menu__list__item">Infected</button>
+        </nav>
       </div>
-      <ul class="meet__list">
+      <ul data-tab-id="main" class="meet__list meet__list--is--active">
         <li class="meet__list__item">
           <img src="./dist/images/cards/main/joel.webp" alt="">
           <p class="card--name">JOEL</p>
         </li>
         <li class="meet__list__item">
-          <img src="./dist/images/cards/main/joel.webp" alt="">
-          <p class="card--name">JOEL</p>
+          <img src="./dist/images/cards/main/elie.webp" alt="">
+          <p class="card--name">ELLIE</p>
         </li>
         <li class="meet__list__item">
-          <img src="./dist/images/cards/main/joel.webp" alt="">
-          <p class="card--name">JOEL</p>
+          <img src="./dist/images/cards/main/abby.webp" alt="">
+          <p class="card--name">ABBY</p>
+        </li>
+      </ul>
+      <ul data-tab-id="part_1" class="meet__list gap1">
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 1 cast/Tess.webp" alt="Tess">
+          <p class="card--name">TESS</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 1 cast/Bill.webp" alt="">
+          <p class="card--name">BILL</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 1 cast/Marlene.webp" alt="">
+          <p class="card--name">MARLENE</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 1 cast/Tommy.webp" alt="">
+          <p class="card--name">TOMMY</p>
+        </li>
+      </ul>
+      <ul data-tab-id="part_2" class="meet__list gap1">
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 2 cast/Dina.webp" alt="Dina">
+          <p class="card--name">DINA</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 2 cast/Jesse.webp" alt="Jesse">
+          <p class="card--name">JESSE</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 2 cast/Lev.webp" alt="Lev">
+          <p class="card--name">LEV</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Part 2 cast/Yara.webp" alt="Yara">
+          <p class="card--name">YARA</p>
+        </li>
+      </ul>
+      <ul data-tab-id="infected" class="meet__list">
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Infected/Runner.webp" alt="Runner">
+          <p class="card--name">RUNNER</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Infected/Stalker.webp" alt="Stalker">
+          <p class="card--name">STALKER</p>
+        </li>
+        <li class="meet__list__item">
+          <img src="./dist/images/cards/Infected/Clicker.webp" alt="Clicker">
+          <p class="card--name">CLICKER</p>
         </li>
       </ul>
     </div>
@@ -72,16 +122,9 @@
     <h1 class="section--title">TRAILER</h1>
     <img src="./dist/images/trailerback.png" alt="">
     <div class="trailer__box">
-      <iframe width="800" height="540" src="https://www.youtube.com/embed/WxjeV10H1F0" title="The Last of Us Part I - Announce Trailer | PS5 Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="942" height="530" src="https://www.youtube.com/embed/ru5IU8bGx3A" title="THE LAST OF US PART 2 Official Reveal Trailer (4K)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="trailer__menu">
-      <ul class="trailer__menu__list">
-        <li><button class="trailer__menu__list__item--active">PART I</button></li>
-        <li><button class="trailer__menu__list__item">PART II</button></li>
-        <li><button class="trailer__menu__list__item">LEFT BEHIND</button></li>
-        <li><button class="trailer__menu__list__item">TV SERIES</button></li>
-      </ul>
-    </div>
+
   </section>
   <h1 class="section--title">BUY THE GAME</h1>
   <section id="buy" class="buy">
@@ -143,6 +186,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./dist/js/main.js"></script>
 </body>
 
 </html>

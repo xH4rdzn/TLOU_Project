@@ -10,11 +10,19 @@
     }
   }
   &__list {
-    display: flex;
-    gap: 50px;
+    display: none;
     position: absolute;
     top: 243px;
     margin: 0 183px;
+
+    &--is--active {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 50px;
+      position: absolute;
+      top: 243px;
+      margin: 0 183px;
+    }
 
     &__item {
       width: 350px;
@@ -35,7 +43,6 @@
     width: 564px;
     height: 50px;
     border-radius: 50px;
-    // padding: 10px 0;
     position: absolute;
     top: 158px;
     left: 480px;
@@ -65,7 +72,6 @@
           font-weight: 700;
           color: $neutral100;
           padding: 10px 12px;
-          cursor: pointer;
         }
       }
     }

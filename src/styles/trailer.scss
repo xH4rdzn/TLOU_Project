@@ -25,6 +25,8 @@
     position: absolute;
     top: 830px;
     left: 375px;
+    display: flex;
+    justify-content: center;
 
     &__list {
       display: flex;
